@@ -92,6 +92,7 @@ img {
     font-weight: 700;
     cursor: pointer;
     position: relative;
+    z-index: 1;
     transition: var(--main-transition);
 }
 
@@ -1310,4 +1311,31 @@ p.blog-news {
     cursor: pointer;
     position: relative;
     transition: var(--main-transition);
+}
+/* ********************************** */
+/*FITNESS TRAINER*/
+/* ********************************** */
+
+.fitness-trainer{
+    background-image: url(../img/fitness-tariner/fitness-traineer.jpg);
+    background-size: cover;
+    background-position: 100%;
+    padding: 6rem 0;
+}
+h3.fit-tr-h {
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+p.fit-text {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+.fit-text span {
+    text-transform: uppercase;
+    margin-right: 1rem;
+    color: var(--main-color);
 }
