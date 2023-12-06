@@ -1,0 +1,94 @@
+/* *************************************** */
+/* BELOW 1334PX SMALER DESKTOP */
+/* *************************************** */
+@media(max-width:84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .heading-primary {
+        font-size: 4rem;
+    }
+
+}
+
+/* *************************************** */
+/* BELOW 1200px landscape taplet */
+/* *************************************** */
+@media(max-width:75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        pointer-events: none;
+        visibility: none;
+    }
+
+    .nav-mobile-link {
+        flex-direction: column;
+    }
+
+    .nav-mobile-link a {
+        color: black !important;
+        font-size: 3rem !important;
+    }
+
+    .nav-open {
+        display: block;
+    }
+
+    .open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+        z-index: 1;
+
+    }
+
+    .open .nav-close {
+        display: block;
+        position: absolute;
+        right: 29%;
+        top: 8rem;
+    }
+
+    .open .nav-open {
+        display: none;
+    }
+
+
+}
+
+/* *************************************** */
+/* below 944px TO TABLETS */
+/* *************************************** */
+@media (max-width:59em) {
+    html {
+        font-size: 50%;
+    }
+
+}
+
+/* *************************************** */
+/* Responding to Smaller Tablets */
+/* *************************************** */
+
+@media(max-width:44em) {
+    .join-cls{
+        display: none;
+    }
+}
