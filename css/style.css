@@ -163,7 +163,7 @@ ul {
     border: none;
     background-color: inherit;
     cursor: pointer;
-    z-index: 1;
+    z-index: 6;
 }
 .fa-bars:before{
     color: white;
@@ -278,6 +278,7 @@ li.nav-list a:active {
     transform: translate(-50%, -50%);
     right: 1rem;
     top: 45%;
+    z-index: 1;
 }
 
 .heading-pr {
