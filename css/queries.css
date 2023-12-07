@@ -32,7 +32,9 @@
         transition: all 0.5s ease-in;
         pointer-events: none;
         visibility: none;
+        display: none;
         z-index: 1;
+        transition: all 0.5s;
     }
 
     .nav-mobile-link {
@@ -45,7 +47,7 @@
     }
 
     .nav-open {
-        display: block;
+        display: block !important;
     }
 
     .open .main-nav {
@@ -54,6 +56,7 @@
         visibility: visible;
         transform: translateX(0);
         z-index: 5;
+        display: inherit;
     }
 
     .open .nav-close {
@@ -67,6 +70,12 @@
         display: none;
     }
 
+    .flex-logos img {
+        width: 20rem
+    }
+
+
+
 
 }
 
@@ -76,6 +85,43 @@
 @media (max-width:59em) {
     html {
         font-size: 50%;
+    }
+
+    .grid {
+        column-gap: 3.4rem;
+    }
+
+    .how {
+        grid-template-columns: 1.5fr 1fr;
+    }
+    .ch-st{
+        grid-template-columns:1fr;
+
+    }
+
+    .video-side,
+    img.testi-new {
+        display: none;
+    }
+
+    .text-side {
+        padding: 4rem;
+        text-align: center;
+    }
+
+    .text-monials {
+        width: 100%
+    }
+
+    .flex-logos img {
+        width: 15rem;
+    }
+    .ch-st-img {
+        top: -37%;
+        width: 35%;
+        left: 32%;
+        position: absolute;
+        z-index: -1;
     }
 
 }
@@ -88,7 +134,51 @@
     .join-cls {
         display: none;
     }
+
+    .who-box {
+        padding: 4rem 2rem;
+    }
+
+    .how-img {
+        display: none;
+    }
+    .how {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .featured-cta h2 {
+        text-align: center;
+    }
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-box {
+        grid-area: inherit !important;
+    }
+    .best-fit {
+        background-image: none;
+        background-color: red;
+    }
+
+    .featured-cta {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    img.img-svg-red {
+        position: absolute;
+        top: -1%;
+        right: 32%;
+    }
+
+
+
+
+
+
 }
+
+
 
 
 /* *************************************** */
@@ -171,12 +261,18 @@
         gap: 6rem;
         padding: 2rem;
     }
+
     .reason-div {
         row-gap: 3rem;
     }
 
     img.testi-new {
         display: none;
+    }
+    img.img-svg-red {
+        position: absolute;
+        top: -1%;
+        right: 25%;
     }
 
     .text-monials {
@@ -223,16 +319,7 @@
         top: -5%;
         width: 23rem;
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    .header-div-img {
+        right: 32%;
+    }
 }
