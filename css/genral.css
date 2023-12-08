@@ -148,7 +148,7 @@ ul {
 /*  ALL Pages  */
 /* ********************************** */
 .main-section-pages {
-    background-image: url(/Pages/banner.45hv.jpg);
+    background-image: url(../Pages/banner.45hv.jpg);
     height: 45vh;
     background-position: 50%;
     background-repeat: no-repeat;
