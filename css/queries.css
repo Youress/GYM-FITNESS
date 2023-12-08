@@ -213,7 +213,7 @@
     }
 
     .grid--3-cols {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .how {

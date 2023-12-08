@@ -276,3 +276,15 @@ button.submit-form {
     border: none;
     cursor: pointer;
 }
+
+/* ********************************** */
+/*  GALLERY  */
+/* ********************************** */
+.gallery-section{
+   margin-top: 6rem; 
+}
+.gallery-grid {
+    display: grid;
+    gap: 1rem;
+    
+}
