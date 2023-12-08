@@ -20,7 +20,8 @@ img {
     row-gap: 9.6rem;
     /* margin-bottom: 9.6rem; */
 }
-.grid-no-s{
+
+.grid-no-s {
     display: grid;
 }
 
@@ -158,12 +159,14 @@ ul {
     display: flex;
     justify-content: center;
 }
+
 .section-header-spec {
     position: absolute;
     bottom: 25px;
     font-size: 5rem;
     color: white;
 }
+
 /* ********************************** */
 /*  schedule Page */
 /* ********************************** */
@@ -182,63 +185,77 @@ ul {
     padding: 10rem;
     gap: 1rem;
 }
+
 img.about-img {
     width: 10rem;
 }
+
 h3.about-h {
     font-size: 4rem;
     font-weight: 800;
 }
+
 p.about-text {
     font-size: 1.6rem;
     color: var(--second-color);
 }
-.about-img-box1{
+
+.about-img-box1 {
     background-image: url(/Pages/about-us/about-us1.jpg);
     background-size: cover;
 }
-.about-img-box2{
+
+.about-img-box2 {
     background-image: url(/Pages/about-us/about-us2.jpg);
 }
+
 /* ********************************** */
 /* CONTACT US */
 /* ********************************** */
 section.contact-us {
     margin-top: 6rem;
 }
+
 .we-are-her {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
+
 .header-div-h2 {
     font-size: 4rem;
     font-weight: 700;
 }
+
 .header-div-text {
     color: rgb(180, 180, 180);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6;
 }
+
 .info-box {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
 }
+
 .info-hd {
     text-align: left;
     flex-direction: column;
     display: flex;
     gap: 1rem;
 }
+
 p.info-hd-h2 {
     font-size: 2rem;
     font-weight: 700;
 }
+
 .contact-us-fr {
     background-color: #f8f8f8;
 }
+
 form.from-ctc {
     display: flex;
     flex-direction: column;
@@ -248,9 +265,11 @@ form.from-ctc {
     padding-left: 4.5rem;
     padding-bottom: 5rem;
 }
+
 h3.form-heading {
     font-size: 2.5rem;
 }
+
 form.from-ctc input {
     padding: 1.5rem 2rem;
     outline: 2px solid transparent;
@@ -258,15 +277,18 @@ form.from-ctc input {
     border: 1px solid rgb(228 228 228);
     height: 51px;
 }
+
 .contact-us-fr select {
     padding: 1.5rem 2rem;
     border: 1px solid rgb(228 228 228);
     outline: none;
 }
+
 textarea.textarea {
     border: 1px solid rgb(228 228 228);
     outline: none;
 }
+
 button.submit-form {
     width: fit-content;
     margin: 0 auto;
@@ -280,11 +302,100 @@ button.submit-form {
 /* ********************************** */
 /*  GALLERY  */
 /* ********************************** */
-.gallery-section{
-   margin-top: 6rem; 
+.gallery-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
+
 .gallery-grid {
     display: grid;
     gap: 1rem;
-    
+
+}
+
+.arrow-rights {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+button.arrow-rt {
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.red-rt {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+/* ********************************** */
+/*  Classes  */
+/* ********************************** */
+.section-classes {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.class-box1 {
+    background-image: url(../Pages/classess/cycling.jpg);
+}
+
+.class-box2 {
+    background-image: url(../Pages/classess/karate.jpg);
+}
+
+.class-box3 {
+    background-image: url(../Pages/classess/meditation.jpg);
+}
+
+.class-box4 {
+    background-image: url(../Pages/classess/mma.jpg);
+}
+
+.class-box5 {
+    background-image: url(../Pages/classess/power.jpg);
+}
+
+.class-box6 {
+    background-image: url(../Pages/classess/workout.jpg);
+}
+
+.all-classes {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    padding: 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+}
+
+.cla-inside-box1 {
+    display: flex;
+    flex-direction: column;
+    height: 46rem;
+    justify-content: flex-end;
+    color: white;
+}
+p.cla-para {
+    font-size: 3rem;
+    font-weight: 700;
+}
+span.cla-span {
+    height: 5px;
+    width: 5rem;
+    background-color: red;
+}
+.cla-nm-tm {
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.6rem;
 }

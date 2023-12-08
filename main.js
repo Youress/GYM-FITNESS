@@ -95,7 +95,7 @@ function showSchedule(day) {
   // console.log(schedules["Monday"]) //access with square bracket notation it alwyas should be string ""
 
   if (schedule) {
-    scheduleContent.innerHTML = ""; // Clear previous content
+    scheduleContent.innerHTML = ''; // Clear previous content
 
     // Iterate over each session and create HTML elements
     for (let i = 1; i <= 3; i++) {
