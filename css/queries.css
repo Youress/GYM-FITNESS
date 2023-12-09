@@ -108,6 +108,14 @@
         padding: 4rem;
         text-align: center;
     }
+    .text-side-div {
+        position: relative;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
 
     .text-monials {
         width: 100%
@@ -165,12 +173,22 @@
         flex-direction: column;
         gap: 3rem;
     }
-    img.img-svg-red {
-        position: absolute;
-        top: -1%;
-        right: 32%;
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr !important;
     }
-
+    .we-are-her {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+    .grid-no-s {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 4rem;
+    }
+   
 
 
 
@@ -182,7 +200,7 @@
 
 
 /* *************************************** */
-/* Responding to Smaller Tablets */
+/* Responding to Smaller phone */
 /* *************************************** */
 
 @media(max-width:34em) {
@@ -269,12 +287,7 @@
     img.testi-new {
         display: none;
     }
-    img.img-svg-red {
-        position: absolute;
-        top: -1%;
-        right: 25%;
-    }
-
+   
     .text-monials {
         width: 100%;
     }
@@ -311,15 +324,16 @@
     .footer-col {
         gap: 3rem;
     }
+    .grid-no-s {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .gallery-1 {
+        margin: 0 auto;
+    }
+    ul.content-table{
+        flex-wrap: wrap;
+    }
 
-    .header-div-img {
-        position: absolute;
-        right: 29%;
-        z-index: -1;
-        top: -5%;
-        width: 23rem;
-    }
-    .header-div-img {
-        right: 32%;
-    }
+    
 }

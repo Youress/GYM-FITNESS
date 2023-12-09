@@ -31,6 +31,8 @@ ul.days {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem 
 }
 .table-content {
     display: flex;
@@ -72,7 +74,7 @@ ul.content-table {
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(242 242 242)
+    background-color: rgb(242 242 242);
 }
 
 p.text {

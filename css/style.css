@@ -275,13 +275,8 @@ li.nav-list a:active {
     flex-direction: column;
     gap: 4rem;
     position: relative;
+    align-items: center;
     z-index: 1;
-}
-
-img.img-svg-red {
-    position: absolute;
-    top: -1%;
-
 }
 
 p.heading-pn {
@@ -290,6 +285,15 @@ p.heading-pn {
     color: white;
     font-size: 2rem;
     font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.img-svg-red{
+    position: absolute;
+    z-index: -1;
+    left: 2rem;
+    width: 20rem;
 }
 
 h2.heading-secondary {
