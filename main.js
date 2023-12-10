@@ -2,11 +2,11 @@ let header = document.querySelector(".header");
 let closBtn = document.querySelector(`.nav-close`);
 let openBtn = document.querySelector(`.nav-open`);
 
-let navBtn = document.querySelectorAll(".nav-mobile-link li");
+let navBtn = document.querySelectorAll(".main-nav ul li");
 
 navBtn.forEach((e) => {
   e.onclick = function () {
-    header.classList.remove("open");
+    header.classList.toggle("open");
   };
 });
 
