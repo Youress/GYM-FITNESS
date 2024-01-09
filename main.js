@@ -89,22 +89,26 @@ list.forEach((dayElement) => {
   };
 });
 
+// ... (Previous code remains unchanged)
+
 function showSchedule(day) {
   const scheduleContent = document.getElementById("scheduleContent");
-  const schedule = schedules[day];
-  // console.log(schedules["Monday"]) //access with square bracket notation it alwyas should be string ""
 
-  if (schedule) {
+  // Check if the scheduleContent element is found
+  if (scheduleContent) {
     scheduleContent.innerHTML = ''; // Clear previous content
 
-    // Iterate over each session and create HTML elements
-    for (let i = 1; i <= 3; i++) {
-      const className = schedule[`className${i}`];
-      const time = schedule[`time${i}`];
-      const trainer = schedule[`trainer${i}`];
+    const schedule = schedules[day];
 
-      if (className && time && trainer) {
-        scheduleContent.innerHTML += `
+    if (schedule) {
+      // Iterate over each session and create HTML elements
+      for (let i = 1; i <= 3; i++) {
+        const className = schedule[`className${i}`];
+        const time = schedule[`time${i}`];
+        const trainer = schedule[`trainer${i}`];
+
+        if (className && time && trainer) {
+          scheduleContent.innerHTML += `
             <ul class="content-table">
               <li>
                 <p class="text">Class Name</p>
@@ -122,10 +126,15 @@ function showSchedule(day) {
                 <button class="button">Join Now</button>
               </li>
             </ul>`;
+        }
       }
     }
+  } else {
+    console.error("Element with ID 'scheduleContent' not found.");
   }
 }
+
+// ... (Remaining code remains unchanged)
 
 function showData() {
   let storedDay = localStorage.getItem("selectedDay");
