@@ -17,6 +17,41 @@ closBtn.addEventListener("click", (e) => {
   header.classList.remove("open");
 });
 
+//BMI CALCULATOR
+function calculateBmi(e) {
+
+  let weightInput = document.querySelector(".weight-input");
+  let heightInput = document.querySelector(".height-input");
+  let bmiResult = document.querySelector(".result-bmi");
+  let weightResult = document.querySelector(".result-weight");
+
+
+
+  // Check if the elements are present before accessing their values
+  if (weightInput && heightInput) {
+    let weight = parseFloat(weightInput.value);
+    let height = parseFloat(heightInput.value);
+
+    if (isNaN(weight) || isNaN(height) || height <= 0) {
+      bmiResult.textContent = '';
+      weightResult.textContent = 'Please enter valid weight and height values.';
+      return;
+    }
+
+    let bmi = (weight / (height * height)) * 10000; // Adjust for height in cm
+
+    bmiResult.innerHTML = bmi.toFixed(2);
+    
+    if (bmi <= 24.9) {
+      weightResult.innerHTML = 'underweight';
+    } else if (bmi >= 25 && bmi <= 29.9) {
+      weightResult.innerHTML = 'healthy weight';
+    } else {
+      weightResult.innerHTML = 'overweight';
+    }
+  }
+}
+
 // *********************************************************************Scedule
 //hena darna object dyalna howa lwl bach ikon intiliase to others
 
@@ -96,7 +131,7 @@ function showSchedule(day) {
 
   // Check if the scheduleContent element is found
   if (scheduleContent) {
-    scheduleContent.innerHTML = ''; // Clear previous content
+    scheduleContent.innerHTML = ""; // Clear previous content
 
     const schedule = schedules[day];
 

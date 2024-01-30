@@ -1003,6 +1003,7 @@ form.frm-bmi {
 }
 
 input.inp-bmi {
+    color: white;
     outline: none;
     padding: 1.3rem;
     background-color: inherit;

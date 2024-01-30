@@ -351,11 +351,11 @@
       <h4 class="bmi-head">Let's Calculate Your <span>BMI</span></h4>
       <p class="bmi-text">Easily determine your body mass index with our accurate calculation tool.</p>
       <form class="frm-bmi" >
-        <input class="inp-bmi" type="number" placeholder="Weight/kg" required min="0">
-        <input class="inp-bmi" type="number" placeholder="Height/cm" required min="0">
-        <p class="result-i">Your BMI is:<span class="result-bmi"></span></p>
-        <p class="result-i">Your weight is: <span class="result-weight"></span></p>
-        <button class="btn-sbt">Calculate</button>
+        <input class="inp-bmi weight-input" type="number" placeholder="Weight/kg" required min="0">
+        <input class="inp-bmi height-input" type="number" placeholder="Height/cm" required min="0">
+        <p class="result-i bmi-result">Your BMI is:<span class="result-bmi"></span></p>
+        <p class="result-i weight-reslut">Your weight is: <span class="result-weight"></span></p>
+        <button type="button" class="btn-sbt" onclick="calculateBmi()">Calculate</button>
       </form>
 
     </div>
