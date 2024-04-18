@@ -64,38 +64,38 @@ const schedules = {
   Tuesday: {
     className1: "Yoga",
     time1: "10:30am-11:30am",
-    trainer1: "Sarah Smith",
+    trainer1: "Isabella Thomas",
     className2: "Yoga",
     time2: "10:00am-11:00am",
-    trainer2: "Mia Kha",
+    trainer2: "Ethan Brown",
     className3: "Crossfit",
     time3: "4:00am-5:00am",
-    trainer3: "Cristofer Columbo",
+    trainer3: "Sophia Martinez",
   },
   Wednesday: {
     className1: "fitness",
     time1: "11:30am-12:30am",
-    trainer1: "Joe Biden",
+    trainer1: "Sophia Martinez",
   },
   Thursday: {
     className1: "Cross fit",
     time1: "8:30am-9:30am",
-    trainer1: "leonardo de Caprio",
+    trainer1: "William Anderson",
   },
   Friday: {
     className1: "FootBall",
     time1: "9:30am-10:30am",
-    trainer1: "Cristiano Ronaldo",
+    trainer1: "Ethan Brown",
   },
   Saturday: {
     className1: "fitness",
     time1: "11:30am-12:30am",
-    trainer1: "Joe Biden",
+    trainer1: "Emily Smith",
   },
   Sunday: {
     className1: "Running",
     time1: "10:30am-12:00am",
-    trainer1: "Lionel Messi",
+    trainer1: "James Johnson",
   },
 };
 
